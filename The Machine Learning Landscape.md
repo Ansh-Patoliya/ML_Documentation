@@ -76,4 +76,27 @@ Machine Learning evu problems mate best chhe je:
     * Aa *clustering* chhe.
 
 * **Ek game mate intelligent bot banavvu**
-    * Aa *Reinforcement Learning (RL)* no upyog kare chhe. 
+    * Aa *Reinforcement Learning (RL)* no upyog kare chhe.
+ 
+# Types of Machine Learning Systems
+
+Machine Learning systems ne samanya rite 3 mukhya criteria na aadhare alag-alag categories ma vechvama aave chhe:
+
+### 1. Based on Human Supervision (Training Method)
+Aa joy chhe ke system ne train karva mate **human supervision** (manviya dekhrekh) ni jarur chhe ke nahi.
+- **Supervised Learning**
+- **Unsupervised Learning**
+- **Semisupervised Learning**
+- **Reinforcement Learning**
+
+### 2. Based on Incremental Learning (Learning Ability)
+Aa joy chhe ke system incrementally 'on the fly' (satat) navo data aave tenathi shikhi shake chhe ke nahi.
+- **Online Learning:** 'On the fly' nava data aave em-em incrementally shikhe.
+- **Batch Learning:** Ek sathe badha available data (batch) mathi offline mode ma shikhe.
+
+### 3. Based on Generalization Method (Working Logic)
+Aa joy chhe ke system navi situation ma prediction kevi rite kare chhe.
+- **Instance-Based Learning:** Nava data ne known data points sathe simply **compare** karine kaam kare.
+- **Model-Based Learning:** Training data mathi patterns **detect** karine ek predictive **model build** kare chhe.
+
+**Note:** Aa categories ne combine kari shakay chhe. Jm ke, ek advanced spam filter **online**, **model-based**, ane **supervised** system hoi shake chhe.

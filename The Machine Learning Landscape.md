@@ -1,1 +1,79 @@
- 
+# The Machine Learning Landscape
+
+---
+
+## Machine Learning Shu Chhe? (What Is Machine Learning?)
+
+Machine Learning e computers ne program karvanu **science (ane art)** chhe jethi teo **data mathi learn kari shake**.
+
+#### General Definition:
+> [Machine Learning e] study no field chhe je computers ne explicitly program karya vagar learn karvani ability aape chhe.
+>
+> — *Arthur Samuel, 1959*
+
+#### Engineering-Oriented Definition:
+> Ek computer program ne evu kehvay ke te experience *E* mathi koi task *T* ane koi performance measure *P* na sandarbh ma learn kare chhe, jo teni performance *T* par, je *P* dwara mapvama aave chhe, te experience *E* sathe improve thay.
+>
+> — *Tom Mitchell, 1997*
+
+**Saral shabdo ma:** Jo tame fakt Wikipedia ni ek copy download karo, to tamara computer pase ghano data aavi jay chhe, parantu te achanak koi pan task ma vadhare smart nathi thai jatu. Aam, fakt data download karvo e Machine Learning nathi. Machine Learning e data mathi patterns shikhi ne potani jate smart banvani prakriya chhe.
+
+---
+
+## Machine Learning Keni Mate Use Karvu? (Why Use Machine Learning?)
+
+Machine Learning evu problems mate best chhe je:
+1.  **Traditional approach mate vadhare complex hoy:** Ghana badha rules lakhva pade.
+2.  **Jeno koi sacho solution na hoy:** ML navo solution shodhi shake chhe.
+3.  **Environment satat badlatu hoy:** ML nava data પ્રમાણે adapt thai shake chhe.
+4.  **Mota data mathi insights joiye:** ML data mathi evi patterns shodhi kade chhe je manviya mate jovi aghri hoy (aane **Data Mining** pan kahevay chhe).
+
+#### Traditional Approach vs. ML Approach (Spam Filter Example)
+
+* **Traditional Approach:**
+    1.  Tame spam kevu dekhay chhe te study karo (e.g., "free", "credit card" jeva shabdo).
+    2.  Aa badha shabdo mate **rules** lakho.
+    3.  Program ne test karo ane jarur pade to rules ne update karo.
+    * **Problem:** Aa process ma ghana complex rules bane chhe jene maintain karva aghra chhe. Jo spammer "For U" ne badle "4U" lakhvanu sharu kare, to tamare navo rule lakhvo pade.
+
+* **Machine Learning Approach:**
+    1.  ML algorithm ne hajaro spam ane non-spam (ham) emails aapvama aave chhe.
+    2.  Algorithm potani jate j shikhi le chhe ke kaya shabdo ke patterns spam indicate kare chhe.
+    * **Faydo:** Aa program nano, maintain karvama saral, ane vadhare accurate hoy chhe. Jo spammers "For U" no upyog karvanu sharu kare, to system automatically aa navi pattern ne shikhi le chhe ane tene block karvanu sharu kari de chhe.
+
+---
+
+## Applications na Examples (Examples of Applications)
+
+* **Production line par products ni images ne analyze karvi**
+    * Aa *image classification* chhe.
+
+* **Brain scans ma tumors ne detect karva**
+    * Aa *semantic segmentation* chhe.
+
+* **News articles ne automatically classify karva**
+    * Aa *Natural Language Processing (NLP)* ane *text classification* chhe.
+
+* **Discussion forums par offensive comments ne automatically flag karvi**
+    * Aa pan *text classification* chhe.
+
+* **Lamba documents ne automatically summarize karva**
+    * Aa *text summarization* chhe.
+
+* **Ek chatbot athva personal assistant banavvu**
+    * Aama *Natural Language Understanding (NLU)* no upyog thay chhe.
+
+* **Company ni aavta varsh ni revenue nu anuman lagavvu**
+    * Aa ek *regression task* chhe.
+
+* **Tamari app ne voice commands par react karavvi**
+    * Aa *speech recognition* chhe.
+
+* **Credit card fraud ne detect karvu**
+    * Aa *anomaly detection* chhe.
+
+* **Clients ne temni purchases na aadhare alag-alag group ma vechva**
+    * Aa *clustering* chhe.
+
+* **Ek game mate intelligent bot banavvu**
+    * Aa *Reinforcement Learning (RL)* no upyog kare chhe. 

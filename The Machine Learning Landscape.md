@@ -100,3 +100,33 @@ Aa joy chhe ke system navi situation ma prediction kevi rite kare chhe.
 - **Model-Based Learning:** Training data mathi patterns **detect** karine ek predictive **model build** kare chhe.
 
 **Note:** Aa categories ne combine kari shakay chhe. Jm ke, ek advanced spam filter **online**, **model-based**, ane **supervised** system hoi shake chhe.
+
+# Supervised Learning
+
+Supervised Learning ma, algorithm ne je **training data** aapvama aave chhe tema solutions pahelathi j shamil hoy chhe. Aa solutions ne **Labels** kahevay chhe. Algorithm nu kaam input data (features) ane output (labels) vachhe na pattern ne shikhavanu chhe.
+
+### Supervised Learning na Mukhya Prakaro (Types)
+
+1.  **Classification:**
+    - **Goal:** Koi item ne predefined **category** athva **class** ma mukvu.
+    - **Example:** Email ne 'Spam' or 'Ham' ma classify karvi.
+
+2.  **Regression:**
+    - **Goal:** Input features na aadhare ek continuous (numeric) **value** ne predict karvi.
+    - **Example:** Car ni price teni `mileage`, `age`, ane `brand` na aadhare predict karvi.
+
+### Key Terminology
+
+- **Labels:** Training data ma aapela sacha javabo (correct answers).
+- **Features:** Prediction karva mate use thata input variables (e.g., car ni mileage, age).
+- **Attribute:** Ek data type (e.g., "mileage").
+- **Feature:** Attribute ane teni value banne (e.g., "mileage = 15,000").
+
+### Mahatva na Supervised Learning Algorithms
+
+- k-Nearest Neighbors
+- Linear Regression
+- Logistic Regression
+- Support Vector Machines (SVMs)
+- Decision Trees and Random Forests
+- Neural Networks

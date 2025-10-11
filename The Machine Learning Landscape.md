@@ -130,3 +130,52 @@ Supervised Learning ma, algorithm ne je **training data** aapvama aave chhe tema
 - Support Vector Machines (SVMs)
 - Decision Trees and Random Forests
 - Neural Networks
+
+# Unsupervised Learning
+
+Unsupervised Learning e Machine Learning ni ek method chhe jema model **unlabeled data** mathi potani jate j patterns, structures, ane insights shodhe chhe. Aama koi "teacher" nathi hotu ane koi sacha javabo (correct labels) pahelathi aapvama nathi aavta. System nu kaam data ma chhupayeli rachna (hidden structure) ne samjvanu chhe.
+
+---
+
+## Unsupervised Learning na Mukhya Prakaro (Main Types)
+
+### 1. Clustering
+Aa sauthi common unsupervised task chhe. Aama data ne teni **similarities** (samanata) na aadhare alag-alag **groups** athva **clusters** ma vechvama aave chhe.
+- **Goal:** Ek j group ma aavta data points ekbija sathe vadhare malta-julta hoy, ane alag-alag group na data points ekbija thi alag hoy.
+- **Example:** Customers ne teni kharidi karvani aadat (purchasing habits) na aadhare alag-alag groups ma mukva jethi targeted marketing kari shakay.
+- **Common Algorithms:**
+    - K-Means
+    - DBSCAN
+    - Hierarchical Cluster Analysis (HCA)
+
+---
+
+### 2. Anomaly Detection
+Aa technique no upyog data ma **unusual** athva **outlier** data points ne shodhi kadhva mate thay chhe.
+- **Goal:** Normal data pattern thi alag padti vastu ne identify karvi.
+- **Example:** Credit card transactions ma **fraud** transaction ne shodhi kadhvu, je samanya transaction pattern thi alag hoy.
+- **Common Algorithms:**
+    - One-Class SVM
+    - Isolation Forest
+    - Local Outlier Factor (LOF)
+
+---
+
+### 3. Dimensionality Reduction
+Jyare data ma ghana badha **features** (columns) hoy, tyare tene saral banavva mate aa technique vapray chhe.
+- **Goal:** Mukhya (important) information ne guamavya vagar features ni sankhya ochhi karvi, jethi data ne store karvu ane process karvu saral bani jay.
+- **Example:** Ghani badhi details vali customer survey ne 2-3 mukhya factors ma summarize karvi.
+- **Common Algorithms:**
+    - Principal Component Analysis (PCA)
+    - Kernel PCA
+    - t-SNE (t-distributed Stochastic Neighbor Embedding)
+
+---
+
+### 4. Association Rule Learning
+Aa technique no upyog mota dataset ma items vachhe na **interesting relationships** shodhi kadhva mate thay chhe.
+- **Goal:** Eva rules shodhi kadhva je batavi shake ke ek vastu ni sathe biji kai vastu hovani sambhavna chhe.
+- **Example:** Supermarket ma "je loko bread kharide chhe, te loko butter pan kharide chhe" evi pattern shodhi kadhvi.
+- **Common Algorithms:**
+    - Apriori
+    - Eclat

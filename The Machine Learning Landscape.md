@@ -179,3 +179,41 @@ Aa technique no upyog mota dataset ma items vachhe na **interesting relationship
 - **Common Algorithms:**
     - Apriori
     - Eclat
+
+# Semisupervised Learning
+
+Semisupervised Learning e **Supervised** ane **Unsupervised Learning** ni vachhe ni ek hybrid method chhe. Aa approach ma, algorithm ne evu data aapvama aave chhe jema thodo bhag **labeled** (jawab sathe) hoy chhe ane moto bhag **unlabeled** (jawab vagar) hoy chhe.
+
+**Main Idea:** Model pahela thoda labeled data mathi shikhe chhe, ane pachhi e knowledge no upyog unlabeled data ma structure ane patterns shodhi kadhva mate kare chhe. Aam, te potani understanding ne vadhare improve kare chhe.
+
+---
+
+## Semisupervised Learning Keni Mate Use Karvu?
+
+Aa approach tya sauthi vadhare upyogi chhe jya:
+1.  **Data Labeling Mehengu Hoy:** Data collect karvu saral hoy, pan tene label karva (jawab aapva) ma ghano samay, paisa, athva human effort lagto hoy.
+2.  **Thodo Labeled Data Available Hoy:** Tamari pase thodo labeled data to chhe, pan vadhare accuracy medavva mate e purn nathi.
+
+**Example:**
+- **Google Photos:** Tame ek vyakti ne ek var olkho chho ("labeled"), pachhi Google potani jate j e vyakti na bija hajaro photos ne olkhi kade chhe ("unlabeled").
+- **Medical Images:** Doctor thoda X-rays ma bimari ne identify kare chhe (labeled). Pachhi model e anubhav parthi baki na hajaro X-rays (unlabeled) ma bimari hovani sambhavna shodhi kade chhe.
+
+---
+
+## Common Techniques and Algorithms
+
+Semisupervised learning samanya rite ketlik assumptions par kaam kare chhe, jevu ke:
+- **Continuity Assumption:** Je data points ekbija ni najik chhe, teni label pan sarkhi hovani sambhavna vadhare chhe.
+- **Cluster Assumption:** Data samanya rite alag-alag clusters (groups) ma vechayelo hoy chhe. Ek j cluster ma aavta badha data points ni label sarkhi hoy chhe.
+
+### Algorithm Examples:
+- **Self-Training:**
+    - Aa ek technique chhe jema koi pan supervised classifier no upyog kari shakay. Model pahela labeled data par train thay chhe. Pachhi te unlabeled data par predictions kare chhe. Sauthi confident predictions ne nava "labels" tarike add kari devama aave chhe ane model ne aa nava data sathe farithi train karvama aave chhe.
+- **Generative Models:**
+    - Aa models data kevi rite generate thayo hashe e shikhavano prayatna kare chhe.
+    - *Example:* **Gaussian Mixture Models (GMMs)** no upyog clustering ane classification banne mate thay chhe.
+- **Graph-Based Methods:**
+    - Aa methods data points ne ek graph na nodes tarike jove chhe ane labels ne graph par "propagate" (felave) chhe.
+    - *Examples:* **Label Propagation**, **Label Spreading**.
+- **Transductive SVM (TSVM):**
+    - Aa Support Vector Machine (SVM) nu ek version chhe je unlabeled data no upyog kari ne best decision boundary shodhavano prayatna kare chhe.

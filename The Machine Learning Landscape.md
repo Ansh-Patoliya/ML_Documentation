@@ -217,3 +217,50 @@ Semisupervised learning samanya rite ketlik assumptions par kaam kare chhe, jevu
     - *Examples:* **Label Propagation**, **Label Spreading**.
 - **Transductive SVM (TSVM):**
     - Aa Support Vector Machine (SVM) nu ek version chhe je unlabeled data no upyog kari ne best decision boundary shodhavano prayatna kare chhe.
+
+# Reinforcement Learning (RL)
+
+Reinforcement Learning e Machine Learning ni ek aevi branch chhe jema ek **agent** (e.g., ek robot, ek game character) ek **environment** (e.g., ek game, ek real-world scenario) ma potani jate j shikhvanu prayatna kare chhe. Aa `trial and error` method par kaam kare chhe.
+
+**Main Idea:** Agent ek **action** (karya) kare chhe. E action na parinaam swarupe, environment tene ek **reward** (shabashi) athva ek **penalty** (saza) aape chhe. Agent no **goal** e aevi strategy (*policy*) shikhvano chhe jethi te samay sathe potani total reward ne **maximize** (vadhare ma vadhare) kari shake.
+
+---
+
+## Reinforcement Learning na Mukhya Components
+
+- **Agent:** Je shikhe chhe ane nirnay le chhe (e.g., game no player).
+- **Environment:** Jeni sathe Agent interact kare chhe (e.g., game nu jagat).
+- **Action:** Agent je pan karya kari shake chhe (e.g., aagal chalvu, jump marvo).
+- **State:** Environment ni current situation (e.g., player kyan chhe, score shu chhe).
+- **Reward:** Saru kaam karva par malto positive feedback (+1 point).
+- **Penalty:** Khotu kaam karva par malto negative feedback (-10 points).
+- **Policy:** Agent ni strategy, je batavve chhe ke kai state ma kai action levi joiye.
+
+---
+
+## Reinforcement Learning Keni Mate Use Karvu?
+
+Aa approach tya sauthi vadhare upyogi chhe jya problem no koi sidho solution nathi, pan ek goal (lakshya) chhe.
+- **Game Playing:** Computer ne potani jate Chess, Go, ke video games ramta shikhadvva (e.g., AlphaGo).
+- **Robotics:** Robots ne chalvu, vastu uthavvi, ke complex tasks potani jate j karta shikhadvva.
+- **Self-Driving Cars:** Car ne potani jate traffic ma kevi rite chalavvi te shikhadvva.
+- **Resource Management:** Ek mota computer network ma resources ne kevi rite best rite manage karva.
+
+---
+
+## Common Reinforcement Learning Algorithms
+
+RL algorithms ne mukhya rite be bhag ma vechi shakay chhe:
+
+### 1. Model-Based
+Aa algorithms pahela environment no ek internal model (naksho) banavvano prayatna kare chhe.
+- **Example:**
+    - Dynamic Programming
+
+### 2. Model-Free
+Aa algorithms environment no koi model banavya vagar, sidha trial and error parthi policy shikhe chhe. Aa vadhare common chhe.
+- **Examples:**
+    - **Q-Learning:** Ek popular algorithm je Q-table no upyog karine shikhe chhe ke koi pan state ma kai action levathi sauthi vadhare reward malshe.
+    - **SARSA (State-Action-Reward-State-Action):** Q-Learning jevo j chhe pan thodo alag rite update thay chhe.
+    - **Deep Q-Networks (DQN):** Jyare states ni sankhya khub j vadhare hoy (jevuke, video game ni screen), tyare Q-table ni jagyae Neural Network no upyog kare chhe.
+    - **Policy Gradient Methods (e.g., REINFORCE, A2C, A3C):** Aa algorithms sidhi rite policy ne j optimize karvano prayatna kare chhe.

@@ -1,5 +1,4 @@
 # The Machine Learning Landscape
-
 ---
 
 ## Machine Learning Shu Chhe? (What Is Machine Learning?)

@@ -263,3 +263,94 @@ Aa algorithms environment no koi model banavya vagar, sidha trial and error part
     - **SARSA (State-Action-Reward-State-Action):** Q-Learning jevo j chhe pan thodo alag rite update thay chhe.
     - **Deep Q-Networks (DQN):** Jyare states ni sankhya khub j vadhare hoy (jevuke, video game ni screen), tyare Q-table ni jagyae Neural Network no upyog kare chhe.
     - **Policy Gradient Methods (e.g., REINFORCE, A2C, A3C):** Aa algorithms sidhi rite policy ne j optimize karvano prayatna kare chhe.
+
+# Batch Learning (Offline Learning)
+
+Batch Learning, jene **Offline Learning** pan kahevay chhe, e Machine Learning ni ek training method chhe jema model ne **badha j available data** par ek sathe train karvama aave chhe. Ek var training purn thai jay, pachhi model ne "launch" karvama aave chhe ane te potani jate kai navu shikhtu nathi.
+
+**Main Idea:** Model ne train karva mate ek "batch" (samuh) ma badho data aapvama aave chhe. Navi vastu shikhva mate, tene badha **juna ane nava data** par **farithi pahelathi (from scratch)** train karvu pade chhe.
+
+---
+
+## Batch Learning ni Process
+
+1.  **Data Collection:** Badho j jaruri data ektho karvama aave chhe.
+2.  **Offline Training:** Model ne aa sampurn dataset par train karvama aave chhe. Aa process ghano samay ane computing resources (CPU, memory) lai shake chhe.
+3.  **Launch Model:** Ek var model taiyar thai jay, tene system ma deploy karvama aave chhe jya te predictions karvanu sharu kare chhe. Aa stage par te kai navu shikhtu nathi.
+4.  **Retraining:** Jyare pan tamari pase navo data aave athva system ni performance ochhi thay, tyare tamare model ne **sampurn dataset (jun + navu)** par farithi train karvu pade chhe ane navu version launch karvu pade chhe.
+
+---
+
+## Characteristics
+
+### Fayda (Pros):
+- **Simplicity:** Aa process sidhi ane saral chhe.
+- **Stability:** Jo data representative hoy, to model ghanu stable bane chhe.
+
+### Gerfayda (Cons):
+- **Resource Intensive:** Training mate ghano samay ane powerful hardware ni jarur pade chhe.
+- **Not for Rapidly Changing Data:** Je systems ma data satat badlato hoy (jevuke, stock market), tena mate aa yogya nathi.
+- **No Incremental Learning:** Te dhire-dhire navi vastu nathi shikhi shaktu. Darekvakhte aakhi process farithi karvi pade chhe.
+
+---
+
+## Example: Image Classifier
+
+Dharo ke tamare ek model banavvu chhe je **kutta (dogs)** ane **biladi (cats)** na photos ne olkhi shake.
+
+1.  **Training (Batch Process):**
+    - Tame 50,000 kutta na ane 50,000 biladi na photos (total 1 lakh photos no ek **batch**) collect karo chho.
+    - Tame aa 1 lakh photos par tamara model ne kayi divaso sudhi **train** karo chho.
+
+2.  **Launch:**
+    - Have tamaru model taiyar chhe. Tame tene ek app ma muko chho jya te nava photos ne kutta ke biladi tarike classify kare chhe.
+
+3.  **Retraining Scenario:**
+    - Have tamare **ghoda (horses)** ne pan olkhavva chhe.
+    - Tamare 50,000 ghoda na photos collect karva padshe.
+    - Have tame model ne fakt ghoda na photos par train nahi kari shako. Tamare **badha j 1.5 lakh photos (kutta + biladi + ghoda)** par model ne **farithi shuruaat thi** train karvu padshe.
+  
+# Online Learning
+
+Online Learning e Machine Learning ni ek dynamic training method chhe jema model **incrementally** (tukde-tukde ma) nava data mathi satat shikhtu rahe chhe. Aa data ne **individually** athva **mini-batches** (nana groups) ma process kare chhe.
+
+**Main Idea:** System ne badha data par ek sathe train karvani jarur nathi. Jevo navo data aave, system **tarat j (on the fly)** tenathi shikhi le chhe ane potana knowledge ne update kari de chhe. Aa batch learning thi bilkul ultu chhe.
+
+---
+
+## Online Learning ni Process
+
+1.  **Data Input:** System ne ek pachhi ek data point athva data no ek nano batch aapvama aave chhe.
+2.  **Instant Learning:** System e data par prediction kare chhe, teni bhul (error) ne mape chhe, ane e bhul na aadhare potana parameters ne **tarat j update** kare chhe.
+3.  **Discard Data:** Ek var data mathi shikhai jay, pachhi tene store karvani jarur nathi (jo tame ichho to kari shako), jethi memory ni bachat thay chhe.
+4.  **Repeat:** Aa process satat chalti rahe chhe jevo-jevo navo data aavto jay.
+
+---
+
+## Characteristics
+
+### Fayda (Pros):
+- **Fast and Efficient:** Te khub j jadapthi nava data sathe adapt thai jay chhe, jethi te rapidly changing data mate ideal chhe.
+- **Resource Friendly:** Tene badho data ek sathe store karvani jarur nathi, jethi te ochha resources (memory, disk space) ma kaam kari shake chhe.
+- **Scalable:** Te eva vishal datasets (huge datasets) ne handle kari shake chhe je ek machine ni memory ma fit na thai shake.
+
+### Gerfayda (Cons):
+- **Sensitive to Bad Data:** Jo system ne kharab quality no data aapvama aave, to teni performance tarat j kharab thai shake chhe.
+- **Needs Monitoring:** Samay sathe system ni performance degrade thai shake chhe, etle teni par satat dhyan rakhvu jaruri chhe.
+
+---
+
+## Example: Social Media Feed
+
+Dharo ke tamare ek system banavvi chhe je social media par users ne teni pasand na posts batavve.
+
+1.  **Initial State:** Shuruaat ma, system ne tamara vishe kai khabar nathi, etle te tamne random posts batavve chhe.
+2.  **Action and Learning (Online Process):**
+    - Tame ek **cat video** par **"Like"** karo chho.
+    - System aa **nava data point** ne tarat j process kare chhe ane shikhe chhe ke tamne cats ma interest chhe.
+    - Have tamari feed ma te thoda vadhare cat videos batavvanu sharu kari deshe.
+    - Pachhi tame ek **cricket match ni highlight** jovo chho.
+    - System aa navi information ne pan tarat j add kari deshe ane have tamne cricket related posts pan batavshe.
+3.  **Continuous Adaptation:** Aa process satat chalti rahe chhe. Tame je pan like, share, ke skip karo chho, tenathi system **real-time ma** shikhtu rahe chhe ane tamari feed ne vadhare relevant banavtu rahe chhe.
+
+Aa system 24 kalak raah nathi joti ke tame shu karyu, te **dareke-darek action** par potani jate **update** thay chhe.

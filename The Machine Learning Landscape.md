@@ -354,3 +354,102 @@ Dharo ke tamare ek system banavvi chhe je social media par users ne teni pasand 
 3.  **Continuous Adaptation:** Aa process satat chalti rahe chhe. Tame je pan like, share, ke skip karo chho, tenathi system **real-time ma** shikhtu rahe chhe ane tamari feed ne vadhare relevant banavtu rahe chhe.
 
 Aa system 24 kalak raah nathi joti ke tame shu karyu, te **dareke-darek action** par potani jate **update** thay chhe.
+
+# Instance-Based Learning
+
+Instance-Based Learning e Machine Learning ni ek aevi method chhe jema system potani jate koi explicit model nathi banavtu. Teni jagyae, te **sampurn training dataset ne j yaad rakhe chhe**. Jyare koi navo data point aave, tyare te aakha training set sathe teni **similarity** (samanata) ne mape chhe ane teno upyog prediction karva mate kare chhe.
+
+Aa approach ne **Lazy Learning** pan kahevay chhe, kem ke te training na samaye kai "shikhtu" nathi, pan prediction na samaye j badhu kaam kare chhe.
+
+---
+
+## Instance-Based Learning ni Process
+
+1.  **Store Data (Training):** Aakha training dataset ne memory ma store kari devama aave chhe. Aa stage par koi computation nathi thatu.
+2.  **Measure Similarity (Prediction):** Jyare ek navo, unlabeled instance aave, tyare system ek **similarity measure** (jevuke, Euclidean distance) no upyog karine nava instance ane training set na darek instance vachhe nu antar (distance) calculate kare chhe.
+3.  **Predict:** Sauthi vadhare similar (sauthi najik na) training instances na aadhare prediction karvama aave chhe.
+
+---
+
+## Characteristics
+
+### Fayda (Pros):
+- **Simple to Implement:** Aano concept khub j saral chhe.
+- **Adapts Easily:** Te nava data ne saraltathi adapt kari le chhe, fakt tene dataset ma add kari devanu hoy chhe.
+- **Complex Decision Boundaries:** Te khub j complex patterns ne pan olkhi shake chhe.
+
+### Gerfayda (Cons):
+- **Slow Predictions:** Jo training dataset khub j moto hoy, to darek nava prediction mate aakha dataset ne scan karvama ghano samay lage chhe.
+- **High Memory Usage:** Tene aakho dataset memory ma store karvo pade chhe.
+- **Sensitive to Irrelevant Features:** Jo data ma ghani બિનજરૂરી features hoy, to similarity measure sachu kaam nathi karto.
+
+---
+
+## Example: Spam Filter
+
+Dharo ke tamare ek spam filter banavvu chhe je **instance-based learning** no upyog kare.
+
+1.  **Training (Storing):**
+    - System hajaro emails ne teni "spam" ke "not spam" (ham) label sathe potani memory ma **store** kari le chhe. Te kai shikhtu nathi, fakt yaad rakhe chhe.
+
+2.  **Prediction (Comparing):**
+    - Have ek **navo email** aave chhe.
+    - System aa nava email ne potani memory ma rahela **badha juna emails sathe compare** kare chhe. Te joy chhe ke nava email ma je shabdo chhe, e juna spam emails sathe vadhare male chhe ke juna ham emails sathe.
+    - Dharo ke system ne khabar pade chhe ke navo email potani memory ma rahela **10 spam emails sathe 90% similar chhe** ane **3 ham emails sathe 15% similar chhe.**
+
+3.  **Final Decision:**
+    - Kem ke navo email spam emails sathe vadhare similar chhe, system tene **"Spam"** tarike classify kari deshe.
+
+Aa badhi process ma, system e koi "rule" nathi banavyo ke "free" shabd aave to spam hoy. Tene fakt similarity na aadhare nirnay lidho.
+
+# Model-Based Learning
+
+Model-based learning e Machine Learning ni ek **"smart"** approach chhe jema system pahela data ne study kare chhe, tema ek **pattern** shodhe chhe, ane e pattern na aadhare ek niyam (**rule**) athva **model** banave chhe. Pachhi, navi vastu par prediction karva mate, te aakha data ne farithi jovani jagyae potana banavela model no j upyog kare chhe.
+
+**Main Idea:** Data mathi shikho -> Ek general rule (model) banavo -> E rule no upyog kari ne predictions karo.
+
+---
+
+## Model-Based Learning ni Process
+
+1.  **Study the Data:** Pahela, data ne analyze karvama aave chhe jethi tema koi trend ke pattern chhe ke nahi e khabar pade.
+2.  **Select a Model:** Data na trend na aadhare ek model no prakar select karvama aave chhe (e.g., linear model, polynomial model).
+3.  **Train the Model:** Have, training data no upyog karine model na best **parameters** (values) shodhavama aave chhe. Aa process no goal ek evu model banavvano chhe je training data par sauthi best રીતે fit thay. Aane **"training"** kahevay chhe.
+4.  **Inference (Prediction):** Ek var model train thai jay, pachhi te nava data par predictions karva mate taiyar chhe. Aa stage ne **inference** kahevay chhe.
+
+---
+
+## Characteristics
+
+### Fayda (Pros) ✅
+
+* **Fast Predictions:** Ek var model taiyar thai jay, pachhi predictions karva khub j jadapthi thay chhe.
+* **Less Memory:** Tene aakho dataset yaad rakhvani jarur nathi, fakt train thayela model na parameters j yaad rakhva pade chhe.
+* **Good Generalization:** Saru model nava, anjaan data par pan sara predictions aapi shake chhe.
+
+### Gerfayda (Cons) ❌
+
+* **Upfront Work:** Saru model select karva ane tene train karva ma vadhare mehenat ane samay lage chhe.
+* **Bad Assumptions:** Jo shuruaat ma j khoto model select karvama aave, to predictions pan khota j aavshe.
+
+---
+
+## Example: Paisa ane Khushi (Money and Happiness) 💰😊
+
+Dharo ke tamare e janvu chhe ke vadhare paisa (GDP) hovathi shu deshna loko vadhare khush (Life Satisfaction) hoy chhe?
+
+1.  **Study the Data:** Tame alag-alag desho no GDP ane Life Satisfaction no data jovo chho. Tamne ek trend dekhay chhe: je desh no GDP vadhare chhe, teno Life Satisfaction score pan vadhare chhe.
+
+2.  **Select a Model:** Aa trend lagbhag ek sidhi line jevo lage chhe, etle tame ek **Linear Model** select karo chho. Tamaro niyam (model) kaik aavo hashe:
+    ```
+    life_satisfaction = Param1 + Param2 × GDP_per_capita
+    ```
+
+3.  **Train the Model:** Have, tame tamara data no upyog karine computer ne `Param1` ane `Param2` ni sauthi best value shodhavanu kaho chho jethi tamari line data points thi sauthi najik rahe. Training pachi, computer tamne kahe chhe ke `Param1 = 4.85` ane `Param2 = 0.0000491` chhe. Have tamaro final model taiyar chhe!
+
+4.  **Prediction (Inference):** Have tamare Cyprus desh mate Life Satisfaction janvvo chhe, jeno data tamari pase nathi. Tame fakt Cyprus no GDP ($22,587) shodho chho ane tene tamara model ma muko chho:
+    ```
+    Prediction = 4.85 + 0.0000491 × 22587
+    Jawab = 5.96
+    ```
+    Tame aakha data ne joya vagar, fakt tamara banavela model no upyog karine jawab medhavi lidho.

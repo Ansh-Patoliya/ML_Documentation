@@ -470,3 +470,36 @@ Aa ML ni sauthi common samasya chhe. Manviya magaj (jevuke, ek nanu badak) thoda
 ### Conclusion:
 
 Jo ke, nana ane medium-sized datasets haji pan common chhe ane navo data medavvo hamesha saral ke sasto nathi hoto. Etle, data sauthi mahatva no chhe, pan algorithms ne pan bhuli na javay.
+
+# Nonrepresentative Training Data (Apratinidhi Training Data)
+
+Machine Learning ma saru generalization karva mate e khub j jaruri chhe ke tamaro training data e asli duniya (real-world cases) no sacho pratinidhi (representative) hoy. Jo tamaro training data biased (pakshpati) hashe, to tamaru model sacha predictions nahi kari shake.
+
+## Samasya Shu Chhe?
+
+Imagine karo ke tame ek model ne "kutro" olkhta shikhavva mate fakt Golden Retriever na j photos batavo chho.
+
+* **Model Shu Shikshe?:** Model evu shikhi leshe ke "kutro etle ek motu, golden color nu, lamba val vadu prani."
+* **Asli Duniya ma Shu Thashe?:** Jyare aa model ek nano, kalo Pug ke ek safed street dog ne joshe, tyare te kahishe, "Aa kutro nathi!" kem ke te teni training ma joyela examples jevu nathi.
+
+Aa bhul etle thai kem ke training data asli duniya na badha j kutra no representative nohto.
+
+## Nonrepresentative Data na Karano
+
+### 1. Sampling Noise
+
+* **Shu Chhe?:** Jyare tamaro sample size khub j nano hoy, tyare tak (chance) na karane evu bani shake ke tamne nonrepresentative data mali jay.
+* **Example:** Jo tame fakt 5 loko na j group parthi aakha desh mate anuman lagavo, to e sachu na hoi shake.
+
+### 2. Sampling Bias
+
+* **Shu Chhe?:** Aa ek vadhare gambhir samasya chhe. Aama, bhale tamaro sample size moto hoy, pan tamari data collect karvani method ma j khami hoy chhe.
+* **Famous Example (1936 US Election):**
+    * Ek magazine (Literary Digest) e 1 crore lokone poll moklyo ane predict karyu ke Landon jitshe. Pan, Roosevelt jiti gaya.
+    * **Bhul Shu Hati?:**
+        * Temne mail mokalva mate telephone directories ane magazine subscriber lists no upyog karyo hato, jema tenaj samay ma vadhare paisadar loko hata. Paisadar loko Landon ne support karta hata.
+        * Fakt 25% loko e j jawab apyo. Je loko e jawab na apyo (nonresponse bias), te alag group na hoi shake chhe.
+
+### Conclusion:
+
+Tamaro training set je cases par tame anuman lagavva mango chho teno sacho aaino (mirror) hovo joiye.

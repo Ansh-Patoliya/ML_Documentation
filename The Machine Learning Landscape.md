@@ -453,3 +453,20 @@ Dharo ke tamare e janvu chhe ke vadhare paisa (GDP) hovathi shu deshna loko vadh
     Jawab = 5.96
     ```
     Tame aakha data ne joya vagar, fakt tamara banavela model no upyog karine jawab medhavi lidho.
+# Machine Learning na Mukhya Challenges
+
+Machine Learning ma project banavti vakhte, be mukhya vastu khoti thai shake chhe: "**kharab algorithm**" athva "**kharab data**". Ahi aapne kharab data na ek mukhya prakar par dhyan aapishu.
+
+## Apurti Matra ma Training Data (Insufficient Quantity of Training Data)
+
+Aa ML ni sauthi common samasya chhe. Manviya magaj (jevuke, ek nanu badak) thoda j examples mathi "safarjan" shu chhe e shikhi le chhe, pan Machine Learning algorithms ne barabar kaam karva mate khub j vadhare data ni jarur pade chhe.
+
+### Key Points:
+
+* **Data ni Jaruriyat:** Saral problems mate pan hajaro examples joiye, jyare image/speech recognition jeva complex problems mate lakhotha examples ni jarur padi shake chhe.
+* **"The Unreasonable Effectiveness of Data":** Ek famous research paper e batavyu ke ghani var, complex problems mate, alag-alag algorithms ni performance lagbhag sarkhi j hoy chhe jo temne purn matra ma data aapvama aave.
+* **Data vs. Algorithm:** Aa batavve chhe ke ghana cases ma, ek saro algorithm shodva par mehenat karva karta, vadhare data ektho karva par dhyan aapvu vadhare faydakarak hoi shake chhe.
+
+### Conclusion:
+
+Jo ke, nana ane medium-sized datasets haji pan common chhe ane navo data medavvo hamesha saral ke sasto nathi hoto. Etle, data sauthi mahatva no chhe, pan algorithms ne pan bhuli na javay.

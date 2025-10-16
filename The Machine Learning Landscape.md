@@ -1,7 +1,6 @@
 # The Machine Learning Landscape
 ---
 
-
 ## Machine Learning Shu Chhe? (What Is Machine Learning?)
 
 Machine Learning e computers ne program karvanu **science (ane art)** chhe jethi teo **data mathi learn kari shake**.

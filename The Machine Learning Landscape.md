@@ -503,3 +503,39 @@ Aa bhul etle thai kem ke training data asli duniya na badha j kutra no represent
 ### Conclusion:
 
 Tamaro training set je cases par tame anuman lagavva mango chho teno sacho aaino (mirror) hovo joiye.
+# Poor-Quality Data (Kharab Gunvatta valo Data)
+
+Machine Learning ma ek mukhya padkar kharab quality valo data chhe. Jo tamaro training data **errors**, **outliers** (alag padta data points), ane **noise** (kachro) thi bharelo hashe, to system sachi patterns olkhi nahi shake ane teni performance kharab thashe.
+
+Sachchai e chhe ke motabhagna data scientists potano moto bhag samay **data cleaning** ma j vitave chhe.
+
+## Data Cleaning Mate Shu Karvu?
+
+Jyare data ni quality kharab hoy, tyare tame niche mujab na steps lai shako chho:
+
+### 1. Outliers ne Handle Karva
+
+Jo ketlak data points spasht rite outliers (bija data thi ekdam alag) hoy, to tene handle karva jaruri chhe.
+
+* **Solution:** Tene system mathi kadhi nakhva (discard) athva jo shakya hoy to tene manually sudharva.
+
+### 2. Missing Features ne Handle Karva
+
+Ghani var data ma ketlik values missing (khali) hoy chhe (e.g., ketlak customers e potani age nathi aapi).
+
+* **Solution Mate Options:**
+    * **Ignore the Attribute:** Aakhi age ni column j kadhi nakhvi.
+    * **Ignore the Instances:** Je customers ni age missing chhe, e customers na data ne j kadhi nakhvo.
+    * **Fill Missing Values:** Khali jagya ne koi value thi bharvi, jevu ke badha customers ni median (madhyasth) age thi.
+    * **Train Separate Models:** Ek model age vala data par train karvu ane biju age vagar na data par.
+ 
+* # Irrelevant Features (Binjaruri Mahiti)
+
+Ek common kehavat chhe: "**Garbage in, garbage out**" (kachro naksho to kachro j bahar aavshe). Jo tamara training data ma ghani **binjaruri features** (irrelevant information) hashe ane purn **upyogi features** (relevant information) nahi hoy, to tamaru model kai saru shikhi nahi shake.
+
+Ek safal ML project mate sara features no set taiyar karvo khub j jaruri chhe. Aa process ne **Feature Engineering** kahevay chhe, jema mukhya rite 3 steps hoy chhe:
+
+1.  **Feature Selection:** Tamari pase je features chhe, tema thi sauthi kaam na features ne pasand karva.
+2.  **Feature Extraction:** Be-tran juna features ne jodi ne ek navu ane vadhare powerful feature banavvu.
+3.  **Creating New Features:** Market ma jai ne bilkul navo data lavi ne nava features banavva.
+4.  

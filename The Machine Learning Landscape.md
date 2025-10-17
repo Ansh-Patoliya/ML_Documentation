@@ -557,3 +557,37 @@ Data ne Saaf Karo: Data mathi errors ane outliers kadhi nakho.
 Mukhya Technique: Regularization
 Regularization e ek technique chhe jema model ne constrain (sankuchit) karvama aave chhe jethi te vadhare simple rahe ane overfit na kare.
 Tame ketlu regularization karva mango chho, e ek Hyperparameter dwara control thay chhe. Aa ek 'knob' jevu chhe jene tame training pahela set karo chho
+
+Underfitting the Training Data (Ochhu Shikhvu)
+Underfitting e overfitting nu bilkul ultu chhe. Aa tyare thay chhe jyare tamaru model data ni complexity ne samjva mate khub j simple (saral) hoy chhe.
+Model etlo simple hoy chhe ke te training data par pan kharab perform kare chhe. Te data ma koi sachi pattern shodhi j nathi shaktu.
+Saral Bhasha ma (Analogy): Imagine karo ke data ek valank (curve) valo chhe, pan tame tene fit karva mate ek sidhi line (linear model) no upyog karva majbur chho. E kyarey barabar fit nahi thay.
+Underfitting na Solutions (Upay)
+Vadhare Powerful Model Select Karo:
+Simple model (Linear Regression) ni jagyae vadhare complex model (Polynomial Regression) no upyog karo jema vadhare parameters hoy.
+Saru Feature Engineering Karo:
+Model ne vadhare kaam na (useful) features aapo jethi te patterns ne sari rite samji shake.
+Constraints Ochha Karo:
+Jo tame regularization vadhare padtu vapryu hoy, to tene ochhu karo (hyperparameter ne reduce karo) jethi model ne shikhvani vadhare flexibility male.
+
+Stepping Back: The Big Picture (Mukhya Saar)
+Aapne ghana concepts joya, to chalo badha no ek quick saaransh (summary) joi laie:
+Machine Learning Shu Chhe?
+E machines ne data mathi shikhva devani rit chhe. Aapne tene sidha rules nathi batavta.
+ML Systems na Mukhya Prakaro:
+Supervised (jawab sathe shikhe) vs. Unsupervised (jawab vagar potani jate shikhe).
+Batch (badhu ek sathe shikhe) vs. Online (dhire-dhire navu shikhe).
+Instance-Based (data ne gokhi le) vs. Model-Based (data mathi niyam banave).
+ML Project Kevu Hoy?
+Data (training set) lo -> Tene ek algorithm ne aapo -> Algorithm shikhshe.
+Model-based algorithm niyam (parameters) banavshe.
+Instance-based algorithm data ne yaad rakhshe ane compare karshe.
+Mukhya Padkaro (Common Problems):
+Kharab Data:
+Insufficient: Data khub j ocho hovo.
+Nonrepresentative: Data asli duniya jevo na hovo.
+Poor Quality: Data ma kachro (noise) ane bhulo hovi.
+Irrelevant Features: Data ma binjaruri mahiti hovi.
+Kharab Model:
+Underfitting: Model khub j simple hovo (kai na shikhi shakyo).
+Overfitting: Model khub j complex hovo (vadhare padtu gokhi lidhu).

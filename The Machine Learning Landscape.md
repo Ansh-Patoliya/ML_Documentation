@@ -539,3 +539,21 @@ Ek safal ML project mate sara features no set taiyar karvo khub j jaruri chhe. A
 2.  **Feature Extraction:** Be-tran juna features ne jodi ne ek navu ane vadhare powerful feature banavvu.
 3.  **Creating New Features:** Market ma jai ne bilkul navo data lavi ne nava features banavva.
 4.  
+
+Kharab Algorithms (Bad Algorithms)
+Algorithm ni pasandgi khoti hoy to pan model kharab bani shake chhe. Aani mukhya samasya chhe "Overfitting".
+Overfitting the Training Data (Vadhare Padtu Shikhvu)
+Overfitting e Machine Learning ni ek moti samasya chhe. Aano arth e chhe ke tamaru model training data par to perfect (e.g., 100% score) perform kare chhe, pan jyare tene navo, anjaan data (new data) aapvama aave, tyare te kharab perform kare chhe. Te "generalize" nathi kari shaktu.
+Saral Bhasha ma (Analogy): Tame ek nava desh ma jao ane ek taxi driver tamne looti le. Tame tarat j overgeneralize kari ne evu mani lo chho ke "aa desh na badha j taxi driver chor chhe." Aa j overfitting chhe.
+Example: Model evu "gokhi" (memorize) le chhe ke training data ma je desho na naam ma 'W' aave chhe te vadhare khush chhe. Aa niyam asli duniya ma kaam na kare.
+Overfitting Keni Mate Thay Chhe?
+Overfitting tyare thay chhe jyare tamaro model khub j complex (powerful) hoy ane tamaro data khub j nano athva noisy (kachra valo) hoy. Model data ma asli pattern ni jagyae noise (kachro) j shikhva mande chhe.
+Overfitting na Solutions (Upay)
+Model ne Simplify Karo:
+Ochha parameters valo simple model (e.g., Linear Model) pasand karo.
+Training data mathi binjaruri features (attributes) kadhi nakho.
+Vadhare Training Data Medavvo: Vadhare data hovathi model asli pattern ne saraltathi olkhi shake chhe.
+Data ne Saaf Karo: Data mathi errors ane outliers kadhi nakho.
+Mukhya Technique: Regularization
+Regularization e ek technique chhe jema model ne constrain (sankuchit) karvama aave chhe jethi te vadhare simple rahe ane overfit na kare.
+Tame ketlu regularization karva mango chho, e ek Hyperparameter dwara control thay chhe. Aa ek 'knob' jevu chhe jene tame training pahela set karo chho

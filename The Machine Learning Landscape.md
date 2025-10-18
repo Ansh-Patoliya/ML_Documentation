@@ -674,3 +674,55 @@ Aa problem ne solve karva mate, aapne data ne 2 ni jagyae 3 bhag ma todiye chhiy
 * **Faydo:** Model nu vadhare sachu mulyankan male chhe.
 * **Gerfaydo:** Training ma ghano vadhare samay lage chhe.
 * 
+
+# Data MMismatch (Data ni Asamanata)
+
+Aa ek common samasya chhe jyare tamaro training data ane tamaro production data (je asli data chhe) ekbija thi alag-alag characteristics dharavta hoy.
+
+**Example: Flower App**
+
+* **Training Data (Easy):** 1 million sundar flower pictures web parthi download karya.
+* **Production Data (Real):** 10,000 pictures je mobile app thi kharekhar levama aavya (blurry, dark, alag angle).
+
+## Mukhya Niyam
+
+Tamaro Validation Set ane Test Set hamesha tamara production data (asli data) mathi j banela hova joiye. Tethi, tame e 10,000 mobile pictures ne j Validation ane Test Set ma vaprsho.
+
+## Confusion (Samasya)
+
+Tame model ne 1 million web pictures par train karyu ane te 99% sacho hato. Pan jyare tame tene Validation Set (mobile pictures) par test karyo, tyare teni accuracy 70% j aavi.
+
+Have tame confuse chho. Aa kharab performance nu karan shu chhe?
+
+1.  **Overfitting?** (Shu model web pictures ne gokhi gayo?)
+2.  **Data Mismatch?** (Shu web pictures ane mobile pictures etla alag chhe ke model confuse thai gayo?)
+
+## Solution: The Train-Dev Set
+
+Aa confusion ne dur karva, Andrew Ng ek **Train-Dev Set** banavvanu kahe chhe.
+
+* **Aa shu chhe?** Aa tamara training data (web pictures) mathi j alag karel ek nano set chhe.
+* **Purpose:** Aa check karva mate ke tamaru model potana j data par to barabar kaam kare chhe ne.
+
+## Analysis Kevirite Karvi
+
+Model ne train karya pachi, tame 3 set par teni performance check karsho:
+
+1.  **Training Set Error** (e.g., 2% error)
+2.  **Train-Dev Set Error** (e.g., 5% error)
+3.  **Validation Set Error** (e.g., 20% error)
+
+### Case 1: Overfitting
+
+Jo Training Error ocho (2%) hoy pan Train-Dev Error vadhare (15%) hoy, to tamaro model **Overfitting** kari rahyo chhe.
+
+* **Solution:** Model ne simplify karo, regularize karo, vadhare training data (web pictures) aapo.
+
+### Case 2: Data Mismatch
+
+Jo Training Error (2%) ane Train-Dev Error (5%) banne ocha hoy, pan Validation Error vadhare (20%) hoy...
+
+To aano arth e chhe ke tamaro model saro chhe, pan te **Data Mismatch** na karane fail thai rahyo chhe.
+
+* **Solution:** Tamari training data (web pictures) ne preprocess karo jethi te mobile pictures jeva (e.g., blurry, dark) dekhay, ane pachhi farithi train karo.
+* 

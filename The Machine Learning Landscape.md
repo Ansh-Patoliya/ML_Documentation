@@ -591,3 +591,16 @@ Irrelevant Features: Data ma binjaruri mahiti hovi.
 Kharab Model:
 Underfitting: Model khub j simple hovo (kai na shikhi shakyo).
 Overfitting: Model khub j complex hovo (vadhare padtu gokhi lidhu).
+
+Testing and Validating (Model ni Exam)
+Ek model banavya pachi, te nava anjaan data (new cases) par kevu perform karshe te janvu jaruri chhe.
+Kharab Rasto: Model ne sidho production (live) ma muki devu. Jo model kharab hashe, to tamara users ne taklif padshe ane teo complain karshe.
+Saro Rasto: Train/Test Split
+Tamaro je pan total data chhe, tene be bhag ma todo:
+Training Set (e.g., 80%): Aa data no upyog model ne shikhavva (train) mate karvama aave chhe.
+Test Set (e.g., 20%): Aa data ne model thi alag (hold out) rakhvama aave chhe. Model ni final exam aa data par levama aave chhe.
+Result Kevu Hoy?
+Test Set par je error (bhulo) male chhe, tene Generalization Error kahevay chhe. Aa batavve chhe ke tamaru model asli duniya ma ketlu saru kaam karshe.
+Jo tamaro Training Error ocho hoy (model practice ma saru chhe) pan Generalization Error vadhare hoy (model exam ma fail thay chhe), to aano spasht arth chhe ke tamaru model Overfitting kari rahyu chhe.
+Note: Samanya rite 80/20 split vapray chhe, pan jo tamari pase 1 crore data points hoy, to 1% data (1 lakh points) pan Test Set mate purn (enough) chhe.
+

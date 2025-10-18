@@ -538,69 +538,139 @@ Ek safal ML project mate sara features no set taiyar karvo khub j jaruri chhe. A
 1.  **Feature Selection:** Tamari pase je features chhe, tema thi sauthi kaam na features ne pasand karva.
 2.  **Feature Extraction:** Be-tran juna features ne jodi ne ek navu ane vadhare powerful feature banavvu.
 3.  **Creating New Features:** Market ma jai ne bilkul navo data lavi ne nava features banavva.
-4.  
-
-Kharab Algorithms (Bad Algorithms)
+4.  Kharab Algorithms (Bad Algorithms)
 Algorithm ni pasandgi khoti hoy to pan model kharab bani shake chhe. Aani mukhya samasya chhe "Overfitting".
-Overfitting the Training Data (Vadhare Padtu Shikhvu)
-Overfitting e Machine Learning ni ek moti samasya chhe. Aano arth e chhe ke tamaru model training data par to perfect (e.g., 100% score) perform kare chhe, pan jyare tene navo, anjaan data (new data) aapvama aave, tyare te kharab perform kare chhe. Te "generalize" nathi kari shaktu.
-Saral Bhasha ma (Analogy): Tame ek nava desh ma jao ane ek taxi driver tamne looti le. Tame tarat j overgeneralize kari ne evu mani lo chho ke "aa desh na badha j taxi driver chor chhe." Aa j overfitting chhe.
-Example: Model evu "gokhi" (memorize) le chhe ke training data ma je desho na naam ma 'W' aave chhe te vadhare khush chhe. Aa niyam asli duniya ma kaam na kare.
-Overfitting Keni Mate Thay Chhe?
-Overfitting tyare thay chhe jyare tamaro model khub j complex (powerful) hoy ane tamaro data khub j nano athva noisy (kachra valo) hoy. Model data ma asli pattern ni jagyae noise (kachro) j shikhva mande chhe.
-Overfitting na Solutions (Upay)
-Model ne Simplify Karo:
-Ochha parameters valo simple model (e.g., Linear Model) pasand karo.
-Training data mathi binjaruri features (attributes) kadhi nakho.
-Vadhare Training Data Medavvo: Vadhare data hovathi model asli pattern ne saraltathi olkhi shake chhe.
-Data ne Saaf Karo: Data mathi errors ane outliers kadhi nakho.
-Mukhya Technique: Regularization
-Regularization e ek technique chhe jema model ne constrain (sankuchit) karvama aave chhe jethi te vadhare simple rahe ane overfit na kare.
-Tame ketlu regularization karva mango chho, e ek Hyperparameter dwara control thay chhe. Aa ek 'knob' jevu chhe jene tame training pahela set karo chho
 
-Underfitting the Training Data (Ochhu Shikhvu)
+
+# Underfitting the Training Data (Ochhu Shikhvu)
+
 Underfitting e overfitting nu bilkul ultu chhe. Aa tyare thay chhe jyare tamaru model data ni complexity ne samjva mate khub j simple (saral) hoy chhe.
+
 Model etlo simple hoy chhe ke te training data par pan kharab perform kare chhe. Te data ma koi sachi pattern shodhi j nathi shaktu.
-Saral Bhasha ma (Analogy): Imagine karo ke data ek valank (curve) valo chhe, pan tame tene fit karva mate ek sidhi line (linear model) no upyog karva majbur chho. E kyarey barabar fit nahi thay.
-Underfitting na Solutions (Upay)
-Vadhare Powerful Model Select Karo:
-Simple model (Linear Regression) ni jagyae vadhare complex model (Polynomial Regression) no upyog karo jema vadhare parameters hoy.
-Saru Feature Engineering Karo:
-Model ne vadhare kaam na (useful) features aapo jethi te patterns ne sari rite samji shake.
-Constraints Ochha Karo:
-Jo tame regularization vadhare padtu vapryu hoy, to tene ochhu karo (hyperparameter ne reduce karo) jethi model ne shikhvani vadhare flexibility male.
 
-Stepping Back: The Big Picture (Mukhya Saar)
+**Saral Bhasha ma (Analogy):** Imagine karo ke data ek valank (curve) valo chhe, pan tame tene fit karva mate ek sidhi line (linear model) no upyog karva majbur chho. E kyarey barabar fit nahi thay.
+
+# Overfitting the Training Data (Vadhare Padtu Shikhvu)
+
+Overfitting e Machine Learning ni ek moti samasya chhe. Aano arth e chhe ke tamaru model training data par to **perfect** (e.g., 100% score) perform kare chhe, pan jyare tene navo, anjaan data (new data) aapvama aave, tyare te kharab perform kare chhe. Te "**generalize**" nathi kari shaktu.
+
+**Saral Bhasha ma (Analogy):** Tame ek nava desh ma jao ane ek taxi driver tamne looti le. Tame tarat j overgeneralize kari ne evu mani lo chho ke "aa desh na badha j taxi driver chor chhe." Aa j overfitting chhe.
+
+**Example:** Model evu "**gokhi**" (memorize) le chhe ke training data ma je desho na naam ma 'W' aave chhe te vadhare khush chhe. Aa niyam asli duniya ma kaam na kare.
+
+## Overfitting Keni Mate Thay Chhe?
+
+Overfitting tyare thay chhe jyare tamaro model khub j **complex** (powerful) hoy ane tamaro data khub j nano athva **noisy** (kachra valo) hoy. Model data ma asli pattern ni jagyae noise (kachro) j shikhva mande chhe.
+
+## Overfitting na Solutions (Upay)
+
+1.  **Model ne Simplify Karo:**
+    * Ochha parameters valo simple model (e.g., Linear Model) pasand karo.
+    * Training data mathi binjaruri features (attributes) kadhi nakho.
+2.  **Vadhare Training Data Medavvo:** Vadhare data hovathi model asli pattern ne saraltathi olkhi shake chhe.
+3.  **Data ne Saaf Karo:** Data mathi errors ane outliers kadhi nakho.
+
+## Mukhya Technique: Regularization
+
+**Regularization** e ek technique chhe jema model ne **constrain** (sankuchit) karvama aave chhe jethi te vadhare simple rahe ane overfit na kare.
+
+Tame ketlu regularization karva mango chho, e ek **Hyperparameter** dwara control thay chhe. Aa ek 'knob' jevu chhe jene tame training pahela set karo chho.
+
+
+## Underfitting na Solutions (Upay)
+
+1.  **Vadhare Powerful Model Select Karo:**
+    * Simple model (Linear Regression) ni jagyae vadhare complex model (Polynomial Regression) no upyog karo jema vadhare parameters hoy.
+2.  **Saru Feature Engineering Karo:**
+    * Model ne vadhare kaam na (useful) features aapo jethi te patterns ne sari rite samji shake.
+3.  **Constraints Ochha Karo:**
+    * Jo tame regularization vadhare padtu vapryu hoy, to tene ochhu karo (hyperparameter ne reduce karo) jethi model ne shikhvani vadhare flexibility male.
+    * 
+
+# Stepping Back: The Big Picture (Mukhya Saar)
+
 Aapne ghana concepts joya, to chalo badha no ek quick saaransh (summary) joi laie:
-Machine Learning Shu Chhe?
-E machines ne data mathi shikhva devani rit chhe. Aapne tene sidha rules nathi batavta.
-ML Systems na Mukhya Prakaro:
-Supervised (jawab sathe shikhe) vs. Unsupervised (jawab vagar potani jate shikhe).
-Batch (badhu ek sathe shikhe) vs. Online (dhire-dhire navu shikhe).
-Instance-Based (data ne gokhi le) vs. Model-Based (data mathi niyam banave).
-ML Project Kevu Hoy?
-Data (training set) lo -> Tene ek algorithm ne aapo -> Algorithm shikhshe.
-Model-based algorithm niyam (parameters) banavshe.
-Instance-based algorithm data ne yaad rakhshe ane compare karshe.
-Mukhya Padkaro (Common Problems):
-Kharab Data:
-Insufficient: Data khub j ocho hovo.
-Nonrepresentative: Data asli duniya jevo na hovo.
-Poor Quality: Data ma kachro (noise) ane bhulo hovi.
-Irrelevant Features: Data ma binjaruri mahiti hovi.
-Kharab Model:
-Underfitting: Model khub j simple hovo (kai na shikhi shakyo).
-Overfitting: Model khub j complex hovo (vadhare padtu gokhi lidhu).
 
-Testing and Validating (Model ni Exam)
+## Machine Learning Shu Chhe?
+
+* E machines ne data mathi shikhva devani rit chhe. Aapne tene sidha rules nathi batavta.
+
+## ML Systems na Mukhya Prakaro:
+
+* **Supervised** (jawab sathe shikhe) vs. **Unsupervised** (jawab vagar potani jate shikhe).
+* **Batch** (badhu ek sathe shikhe) vs. **Online** (dhire-dhire navu shikhe).
+* **Instance-Based** (data ne gokhi le) vs. **Model-Based** (data mathi niyam banave).
+
+## ML Project Kevu Hoy?
+
+* Data (training set) lo -> Tene ek algorithm ne aapo -> Algorithm shikhshe.
+* Model-based algorithm niyam (parameters) banavshe.
+* Instance-based algorithm data ne yaad rakhshe ane compare karshe.
+
+## Mukhya Padkaro (Common Problems):
+
+* **Kharab Data:**
+    * **Insufficient:** Data khub j ocho hovo.
+    * **Nonrepresentative:** Data asli duniya jevo na hovo.
+    * **Poor Quality:** Data ma kachro (noise) ane bhulo hovi.
+    * **Irrelevant Features:** Data ma binjaruri mahiti hovi.
+* **Kharab Model:**
+    * **Underfitting:** Model khub j simple hovo (kai na shikhi shakyo).
+    * **Overfitting:** Model khub j complex hovo (vadhare padtu gokhi lidhu).
+    * 
+
+# Testing and Validating (Model ni Exam)
+
 Ek model banavya pachi, te nava anjaan data (new cases) par kevu perform karshe te janvu jaruri chhe.
-Kharab Rasto: Model ne sidho production (live) ma muki devu. Jo model kharab hashe, to tamara users ne taklif padshe ane teo complain karshe.
-Saro Rasto: Train/Test Split
-Tamaro je pan total data chhe, tene be bhag ma todo:
-Training Set (e.g., 80%): Aa data no upyog model ne shikhavva (train) mate karvama aave chhe.
-Test Set (e.g., 20%): Aa data ne model thi alag (hold out) rakhvama aave chhe. Model ni final exam aa data par levama aave chhe.
-Result Kevu Hoy?
-Test Set par je error (bhulo) male chhe, tene Generalization Error kahevay chhe. Aa batavve chhe ke tamaru model asli duniya ma ketlu saru kaam karshe.
-Jo tamaro Training Error ocho hoy (model practice ma saru chhe) pan Generalization Error vadhare hoy (model exam ma fail thay chhe), to aano spasht arth chhe ke tamaru model Overfitting kari rahyu chhe.
-Note: Samanya rite 80/20 split vapray chhe, pan jo tamari pase 1 crore data points hoy, to 1% data (1 lakh points) pan Test Set mate purn (enough) chhe.
 
+* **Kharab Rasto:** Model ne sidho production (live) ma muki devu. Jo model kharab hashe, to tamara users ne taklif padshe ane teo complain karshe.
+* **Saro Rasto:** Train/Test Split
+
+Tamaro je pan total data chhe, tene be bhag ma todo:
+
+* **Training Set (e.g., 80%):** Aa data no upyog model ne shikhavva (train) mate karvama aave chhe.
+* **Test Set (e.g., 20%):** Aa data ne model thi alag (hold out) rakhvama aave chhe. Model ni final exam aa data par levama aave chhe.
+
+## Result Kevu Hoy?
+
+Test Set par je error (bhulo) male chhe, tene **Generalization Error** kahevay chhe. Aa batavve chhe ke tamaru model asli duniya ma ketlu saru kaam karshe.
+
+Jo tamaro **Training Error** ocho hoy (model practice ma saru chhe) pan **Generalization Error** vadhare hoy (model exam ma fail thay chhe), to aano spasht arth chhe ke tamaru model **Overfitting** kari rahyu chhe.
+
+**Note:** Samanya rite 80/20 split vapray chhe, pan jo tamari pase 1 crore data points hoy, to 1% data (1 lakh points) pan Test Set mate purn (enough) chhe.
+
+# Hyperparameter Tuning ane Model Selection (Saro Model Kevirite Select Karvo)
+
+Aapne model nu mulyankan (evaluate) Test Set par karie chhiye. Pan jo tamari pase 2 models (Linear vs. Polynomial) athva 100 alag-alag settings (hyperparameters) hoy, to tema thi best kevi rite pasand karsho?
+
+## Samasya (The Problem)
+
+Tame kadach vicharsho ke chalo badha 100 models ne Test Set par check kari laie ane je jite tene final banavi daie.
+
+Aa khoto rasto chhe! ❌
+
+**Karan:** Jo tame tamara Test Set no upyog model ne pasand karva mate karsho, to tamaru model e Test Set par **Overfit** thai jashe ("exam na dakhla gokhi leshe"). Pachhi jyare te asli duniya ma (nava data par) jashe, tyare te fail thashe.
+
+## Solution: The Validation Set (Mock Exam)
+
+Aa problem ne solve karva mate, aapne data ne 2 ni jagyae 3 bhag ma todiye chhiye:
+
+* **Training Set (Practice):** Model ne shikhavva mate (e.g., 60% data).
+* **Validation Set (Mock Exam):** Alag-alag models ne check karva ane sauthi best ne pasand karva mate (e.g., 20% data).
+* **Test Set (Final Exam):** Badhu patya pachi, final model ne fakt ek j var check karva mate (e.g., 20% data).
+
+## Sachi Process (Holdout Validation)
+
+1.  Tame tamara 100 alag-alag models ne Training Set par train karo.
+2.  Tame aa 100 models ne Validation Set par check karo.
+3.  Je model Validation Set par sauthi saro perform kare (e.g., Model #7), tene tame "Winner" jaher karo.
+4.  Have, tame e Model #7 ne vadhare strong banavva mate, tene purn training data (Original Training + Validation Set) par farithi train karo.
+5.  Aakhere, aa Final Model ne Test Set par check karo. Aa je error aavshe, e tamaro sacho Generalization Error hashe.
+
+## Cross-Validation (Jyare Data Ocho Hoy)
+
+* **Problem:** Jo tamaro data ocho hoy, to Validation Set banavvathi tamaro Training Set vadhare nano thai jay chhe, jethi model barabar train nathi thato.
+* **Solution:** Cross-Validation. Aama data na ghana nana-nana validation sets banavvama aave chhe ane process ne ghani var repeat karine average kadhvama aave chhe.
+* **Faydo:** Model nu vadhare sachu mulyankan male chhe.
+* **Gerfaydo:** Training ma ghano vadhare samay lage chhe.
+* 
